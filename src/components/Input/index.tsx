@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { Input as IInput } from '../../types/index'
 
-const Input = () => {
+const Input: FC<IInput> = ({ value, onChange }) => {
   return (
-    <div>
-      Input
-    </div>
+    <input className="input" type="text" value={ value } onChange={ onChange }/>
   )
 }
 

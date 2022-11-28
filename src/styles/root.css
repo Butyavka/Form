@@ -1,0 +1,76 @@
+:root {
+    --main: #13b109;
+    --light: #90f68a;
+    --intermediate: #29de1e;
+    --grey: #b9b9b9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: fit-content;
+    margin: 200px auto 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.field {
+    display: flex;
+    column-gap: 8px;
+}
+
+.button {
+    width: fit-content;
+    min-width: 50px;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--main);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--intermediate);
+}
+
+.button-box {
+    display: flex;
+    column-gap: 4px;
+}
+
+.input {
+    padding: 2px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+}
+
+.input:focus-visible {
+    outline: solid var(--light) 2px;
+    border: 1px solid var(--main);
+    border-radius: 2px;
+}
+
+.select {
+    padding: 2px;
+    font-size: 16px;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+}
+
+.select:focus-visible {
+    outline: solid var(--light) 2px;
+    border: 1px solid var(--main);
+    border-radius: 2px;
+}
